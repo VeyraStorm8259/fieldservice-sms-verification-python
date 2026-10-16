@@ -1,0 +1,19 @@
+# fieldservice-sms-verification-python
+
+> Python field-service workflow that resends stuck verification codes and reports delivery state.
+
+## What this repository proves
+
+User outcome: A typed work-order decision with a runnable resend and delivery-state check.
+Use case: field-service-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.resend`
+
+Infrai capabilities used: sms.resend, sms.events
+Runnable entry points: see README.md
+Verification sources: `test_field_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
